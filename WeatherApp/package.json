@@ -1,0 +1,11 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Aplikacja do wyświetlania pogody obecnej jak i na cały tydzień. Można sprawdzić pogodę w większości miast na świecie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Łukasz Staniszewski",
+  "license": "ISC"
+}

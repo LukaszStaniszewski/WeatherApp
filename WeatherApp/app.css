@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Segoe UI", Verdana, Geneva, Tahoma, sans-serif;    
+   
+}
+
+#background-image {
+    height: 100vh;
+    background-image: url('img/sun4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+   
+    color: #333333;
+}
+
+/*****************Text Styling****************/
+
+p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+i {
+    font-size: 5rem;
+}
+
+sup {
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+    font-weight: 300;
+}
+.weather_info {
+    font-size: 2.5rem;
+    padding: 0 calc(30px + 10vw);
+  
+}
+.weather_info i {
+    font-size: 6rem;     
+}
+
+/*****************  Search  ****************/
+#weather_form {
+    
+   
+    display: flex;
+    padding: 2rem 0 0;
+    position: relative;
+    
+    
+}
+
+input {
+    font-family: inherit;
+    background-color: #f4f2f2;
+    width: 100%;
+    height: 2.4rem;
+    vertical-align: middle; 
+    border: none;  
+    border-radius: 50px; 
+    text-align: left 10px;
+    padding-left: 1rem;
+    outline: none;
+}
+
+button {
+    position: absolute;
+    border: none;
+    right: 1rem;
+    bottom: 0;
+   
+    background-color: transparent;
+
+}
+button .fa-search{
+    font-size: 2rem;
+    color: #5a5a5a;
+    cursor: pointer;
+}
+
+input:focus,
+input:active {
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.35);
+} 
+
+
+.fa-search:hover {
+    font-size: 2.3rem;
+    
+} 
+
+/*****************Main Styling****************/
+
+#weather {
+    margin: 2rem auto;
+    min-width: 85%;
+   
+}
+
+.weather_header_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.weather_info_week {
+    padding: 2rem 4rem 2rem 4rem;
+    
+}
+
+.weather_info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.weather_week {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 calc(10px + 3.6603vw);
+      
+}
+
+
+

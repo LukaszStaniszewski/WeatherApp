@@ -1,0 +1,100 @@
+@media screen and (min-width: 900px){
+    #weather {
+        width: 100rem
+    }
+    .weather_week-monday {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }     
+}
+
+@media  screen and (max-width: 899px) {
+    #weather {
+        width: 90rem
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+    .weather_week {
+        flex-direction: column;   
+    }  
+    
+    .weather_week > div {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+    }
+    
+}   
+
+@media screen and (max-width: 600px){
+     h1 {
+         padding: 0 2rem;
+         font-size: 4rem;
+         font-weight: 500px;
+     }
+     
+     .weather_week i {
+        font-size: 4rem;     
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    .weather_info_week {
+        padding: 1rem;
+        align-items: flex-end; 
+            
+    }
+ /*****************Single day info styling***************/   
+    
+    .weather_info {
+        font-size: 1.4rem;
+
+    }
+    .weather_info i {
+        font-size: 4rem;
+    }
+ /*****************Weekly info styling****************/   
+    .weather_week {
+        font-size: 1.3rem;
+    }
+    .weather_week i {
+        font-size: 2rem;     
+    }
+    
+
+     
+}
+    
+@media screen and (max-width: 380px){
+    h1 {
+        padding: 0 2rem;
+        font-size: 3rem;
+        font-weight: 500px;
+    }
+
+    input{
+        
+        width: 890%;
+        justify-content: center;
+        height: 2rem;
+        font-size: 12px;
+    }
+    button {
+        right: 3px;
+        
+    }
+
+    button .fa-search{
+        font-size: 1.6rem;
+    }
+
+    .fa-search:hover {
+        font-size: 2rem;
+    } 
+}
+

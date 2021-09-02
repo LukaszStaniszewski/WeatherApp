@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/386ffefd94.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App UI</title>
+</head>
+<body>
+    <div id="background-image">
+        <section id="weather">
+            <div class="weather_header_form">
+                <h1><span id="weather_header-display"></span></h1>
+                <form id="weather_form">
+                    <input type="text" placeholder="Enter City Name" name="query">
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="weather_info_week"></i>
+                <div class="weather_info">
+                    <div class="weather_info--date">
+                        <p><span id="weather_info--date_display"></span></p>
+                        <p><span id="weather_info--date_conditions"></span></p>
+                        <div class="weather_info--date__icon">
+                            <i id="today_icon"></i>
+                            <p>
+                                <span id="display_temp_today"></span> <sup>&#8451</sup>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="weather_info--data">
+                        <p>RealFeel: <span id="weather_info--data_realFeel"></span> <sup>&#8451</sup></p>
+                        <p>Humidity: <span id="weather-info--data_humidity"> </span>%</p>
+                        <p>Wind: <span id="weather-info--data_wind"> </span>m/s</p>
+                    </div>
+                </div>
+                <div class="weather_week">
+                    <div class="weather_week-monday">
+                        <p>Monday</p>
+                        <i id="monday_icon"></i>
+                        <p><span id="weather-week-monday-day"></span> <sup>&#8451</sup></p>
+                        <p><span id="weather-week-monday-night"></span> <sup>&#8451</sup></p>     
+                    </div>
+                    <div class="weather_week-monday">
+                        <p>Tuesday</p>
+                        <i id="tuesday_icon"></i>
+                        <p><span id="weather-week-Tuesday-day"></span> <sup>&#8451</sup></p>
+                        <p><span id="weather-week-Tuesday-night"></span> <sup>&#8451</sup></p>
+                    </div>
+                    <div class="weather_week-monday">
+                        <p>Wednesday</p>
+                        <i id="wednesday_icon"></i>
+                        <p><span id="weather-week-Wendsday-day"></span> <sup>&#8451</sup></p>
+                        <p><span id="weather-week-Wendsday-night"></span> <sup>&#8451</sup></p>
+                    </div>        
+                    <div class="weather_week-monday">
+                        <p>Thursday</p>
+                        <i id="thursday_icon"></i>
+                        <p><span id="weather-week-Thursday-day"></span> <sup>&#8451</sup></p>
+                        <p><span id="weather-week-Thursday-night"></span> <sup>&#8451</sup></p>
+                    </div>                                        
+                    <div class="weather_week-monday">
+                        <p>Friday</p>
+                        <i id="friday_icon"></i>
+                        <p><span id="weather-week-Friday-day"></span> <sup>&#8451</sup></p>
+                        <p><span id="weather-week-Friday-night"></span> <sup>&#8451</sup></p>
+                    </div>                                        
+                    <div class="weather_week-monday">
+                        <p>Saturday</p>
+                        <i id="saturday_icon"></i>
+                        <p><span id="weather-week-Saturday-day"></span> <sup>&#8451</sup></p>
+                        <p><span id="weather-week-Saturday-night"></span> <sup>&#8451</sup></p>
+                    </div>        
+                    <div class="weather_week-monday">
+                        <p>Sunday</p>
+                        <i id="sunday_icon"></i>
+                        <p><span id="weather-week-Sunday-day"></span> <sup>&#8451</sup></p>
+                        <p><span id="weather-week-Sunday-night"></span> <sup>&#8451</sup></p>   
+                    </div>                 
+                </div>  
+            </div>
+           
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
