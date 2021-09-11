@@ -4,6 +4,9 @@ Aplikacja Webowa stworzona do wyświetlania pogody zarówno obecnej jak i na prz
 ![alt text](https://github.com/LukaszStaniszewski/service/blob/main/WeatherAppMain.jpg?raw=true)
 
 
+## Wykorzytane technologie:
+Podstawowy JavaScript, CSS oraz HTML. Zdecydowałem się zrobić projekt bez używania frameworków, aby zaprezenotować znajomość podstaw DOM oraz JavaScriptu.
+
 ## Wyjaśnienie kodu JavaScript:
 Do pobrania danych o pogdzie, zostało wykorzystane darmowe API z openweathermap.org
 
@@ -48,7 +51,7 @@ currentDay(defDisplay.data)
   ```
 3. Funkcja przekazująca dane dotyczącego obecnego dnia do użytkownika. API przekazuje timestamp, więc aby wyświetlić nazwę obecnego dnia została wykorzystana metoda Date, która      zwraca nie tylko dzień, ale też miesiąc rok i godzinę. Żeby pozyskać tylko dzień została użyta metoda getDay() zwracająca liczbę z obecnej daty dostarczonej przez zmienną date,    stąd tablica z nazwami tygodnia, odpowiadająca kolejno liczbą zwracanych przez getDay(). Tablica zwraca string odpowiednio określony przez liczbę z getDay, następnie ten          zostaje dodany do odpowiedniego spanu w HTML który odowiada za wyświetlenie tego dnia. 
 
-  Pozostałe dane zostały uzyskane poprzez zwykłe odwoływanie się do elementów w obiekcie.
+  Pozostałe dane zostały uzyskane poprzez odwoływanie się do elementów w obiekcie.
   ```javascript
   const currentDay = (data) => {
     const days = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',  ]
@@ -71,7 +74,7 @@ currentDay(defDisplay.data)
   4. Funkca odpowiadająca za wyświetlanie danych na temat całego tygodnia. Zostają pobrane dane o temperaturze w ciągu dnia i nocy oraz ikona zmieniająca się zależnie od pogody.
      API zwraca listę obiektów o numerach 0-7 odpowiadającym poszczególnym dniom, są one destrukturyzowane co powoduje powstanie nowych zmiennych, z nazwami odpowiadającymi danym      na temat który zawierają dane. Następnie te zmienne przekazują dane na temat pogody w dzień i nocy do poszczególnych znaczników w html.
      
-     Ikony obrazujące obecną pogodę są zmieniane poprzez iterowanie po tabeli zawierającym obiekty z ikonami font-awsome oraz nazwami odpowiadającymi nazwom pogody przesyłanych        przez APi
+     Ikony obrazujące obecną pogodę są zmieniane poprzez iterowanie po tabeli zawierającym obiekty z ikonami font-awsome oraz nazwami odpowiadającymi nazwom pogody przesyłanych        przez APi w DOM strony. Jeżeli nazwa opisująca pogodę z APi zgadza się z nazwą stworzonego przeze mnie obiektu, zostaje wyświetlona ikona przypisana do tego obiektu.
 
    ```javascript
       const weeklyWeather = (data) => {
