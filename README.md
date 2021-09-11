@@ -71,7 +71,7 @@ currentDay(defDisplay.data)
       data.weather[0].main === api.apiDescription ? document.querySelector('#today_icon').innerHTML = api.img : ''
      }
    ```
-  4. Funkca odpowiadająca za wyświetlanie danych na temat całego tygodnia. Zostają pobrane dane o temperaturze w ciągu dnia i nocy oraz ikona zmieniająca się zależnie od pogody.
+  4. Funkcja odpowiadająca za wyświetlanie danych na temat całego tygodnia. Zostają pobrane dane o temperaturze w ciągu dnia i nocy oraz ikona zmieniająca się zależnie od pogody.
      API zwraca listę obiektów o numerach 0-7 odpowiadającym poszczególnym dniom, są one destrukturyzowane co powoduje powstanie nowych zmiennych, z nazwami odpowiadającymi danym      na temat który zawierają dane. Następnie te zmienne przekazują dane na temat pogody w dzień i nocy do poszczególnych znaczników w html.
      
      Ikony obrazujące obecną pogodę są zmieniane poprzez iterowanie po tabeli zawierającym obiekty z ikonami font-awsome oraz nazwami odpowiadającymi nazwom pogody przesyłanych        przez APi w DOM strony. Jeżeli nazwa opisująca pogodę z APi zgadza się z nazwą stworzonego przeze mnie obiektu, zostaje wyświetlona ikona przypisana do tego obiektu.
